@@ -1,0 +1,14 @@
+<users>
+  <user>
+    <HoTen>admin123</HoTen>
+    <SĐT>0835413038</SĐT>
+    <Email>admin123@gmail.com</Email>
+    <Pass>admin123</Pass>
+  </user>
+  <user>
+    <HoTen>admin</HoTen>
+    <SĐT>0123456789</SĐT>
+    <Email>123@gmail.com</Email>
+    <Pass>admin123</Pass>
+  </user>
+</users>

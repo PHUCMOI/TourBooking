@@ -39,7 +39,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(3, 336);
+            this.lblTitle.Location = new System.Drawing.Point(3, 271);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(121, 38);
             this.lblTitle.TabIndex = 1;
@@ -49,7 +49,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(5, 383);
+            this.lblTime.Location = new System.Drawing.Point(5, 318);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(97, 28);
             this.lblTime.TabIndex = 2;
@@ -60,7 +60,7 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblPrice.Location = new System.Drawing.Point(350, 457);
+            this.lblPrice.Location = new System.Drawing.Point(185, 390);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(115, 32);
             this.lblPrice.TabIndex = 3;
@@ -70,7 +70,7 @@
             // 
             this.picTour.Location = new System.Drawing.Point(4, 4);
             this.picTour.Name = "picTour";
-            this.picTour.Size = new System.Drawing.Size(493, 329);
+            this.picTour.Size = new System.Drawing.Size(362, 264);
             this.picTour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTour.TabIndex = 0;
             this.picTour.TabStop = false;
@@ -87,7 +87,7 @@
             this.Controls.Add(this.picTour);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "UCItem";
-            this.Size = new System.Drawing.Size(502, 502);
+            this.Size = new System.Drawing.Size(369, 437);
             this.Load += new System.EventHandler(this.UCItem_Load);
             this.Click += new System.EventHandler(this.UCItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.picTour)).EndInit();

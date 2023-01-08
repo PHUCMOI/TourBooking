@@ -16,35 +16,23 @@ namespace FinalProject
     public partial class FmWeatherInfo : Form
     {
         static FmWeatherInfo _obj;
-
-        public static FmWeatherInfo Instance
-        {
-            get
-            {
-                if(_obj == null)
-                {
-                    _obj = new FmWeatherInfo();
-                }    
-                return _obj;
-            }
-        }
-
-        
+        private string city;
 
         public PictureBox BtnBack
         {
             get { return btnBack; }
             set { btnBack = value; }
         }
-        public FmWeatherInfo()
+        public FmWeatherInfo(string city_)
         {
+            city = city_;
             InitializeComponent();
         }
         void getForecast()
         {
             using (WebClient web = new WebClient())
             {
-                string url = string.Format("http://api.openweathermap.org/data/2.5/forecast?q={0}&appid=2724b06529928acbf2189721ec01ea17", "Bangkok");
+                string url = string.Format("http://api.openweathermap.org/data/2.5/forecast?q={0}&appid=2724b06529928acbf2189721ec01ea17", city);
                 var json = web.DownloadString(url);
                 WeatherForecast forecastInfo = JsonConvert.DeserializeObject<WeatherForecast>(json);
                 lblTitle.Text = forecastInfo.city.name;

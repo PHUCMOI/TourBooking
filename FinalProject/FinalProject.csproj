@@ -107,6 +107,12 @@
     <Compile Include="UCDayDetailWeather.Designer.cs">
       <DependentUpon>UCDayDetailWeather.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCDetailItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDetailItem.Designer.cs">
+      <DependentUpon>UCDetailItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCForecast5Days.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCDayDetailWeather.resx">
       <DependentUpon>UCDayDetailWeather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDetailItem.resx">
+      <DependentUpon>UCDetailItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCForecast5Days.resx">
       <DependentUpon>UCForecast5Days.cs</DependentUpon>

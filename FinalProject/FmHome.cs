@@ -14,13 +14,18 @@ namespace FinalProject
     public partial class FmHome : Form
     {
         public static XmlDocument xmlDoc = new XmlDocument();
-        public static XmlNodeList nodeList;
+        public static XmlNodeList nodeList, dayList;
         public static class DataTour
         {
             private static List<string> TourTitle = new List<string>();
             private static List<string> TourTime = new List<string>();
             private static List<string> TourPrice = new List<string>();
             private static List<string> TourDetails = new List<string>();
+            private static List<string> TourCount = new List<string>();
+            private static List<string> TourStart = new List<string>();
+            private static List<string> TourStartPlace = new List<string>();
+
+
 
 
             public static List<string> GlobalTourTitle
@@ -43,6 +48,21 @@ namespace FinalProject
                 get { return TourDetails; }
                 set { TourDetails.Add(value.ToString()); }
             }
+            public static List<string> GlobalTourCount
+            {
+                get { return TourCount; }
+                set { TourCount.Add(value.ToString()); }
+            }
+            public static List<string> GlobalTourStart
+            {
+                get { return TourStart; }
+                set { TourStart.Add(value.ToString()); }
+            }
+            public static List<string> GlobalTourStartPlace
+            {
+                get { return TourStartPlace; }
+                set { TourStartPlace.Add(value.ToString()); }
+            }
         }
         public FmHome()
         {
@@ -60,14 +80,15 @@ namespace FinalProject
                 DataTour.GlobalTourTime.Add(nodeList[i].SelectSingleNode("time").InnerText);
                 DataTour.GlobalTourPrice.Add(nodeList[i].SelectSingleNode("price").InnerText);
                 DataTour.GlobalTourDetails.Add(nodeList[i].SelectSingleNode("schedule").InnerText);
-
+                DataTour.GlobalTourCount.Add(nodeList[i].SelectSingleNode("count").InnerText);
+                DataTour.GlobalTourStart.Add(nodeList[i].SelectSingleNode("start").InnerText);
+                DataTour.GlobalTourStartPlace.Add(nodeList[i].SelectSingleNode("startPlace").InnerText);
 
                 AddTourItem(DataTour.GlobalTourTitle[i],
                     DataTour.GlobalTourTime[i],
                     DataTour.GlobalTourPrice[i],
-                    DataTour.GlobalTourTitle[i] + ".jpg");
+                    DataTour.GlobalTourStartPlace[i] + ".jpg");
             }
-            label1.Text = DataTour.GlobalTourTitle[0];
         }
 
         public void AddTourItem(string title, string time, string price, string image)
@@ -86,9 +107,10 @@ namespace FinalProject
             {
                 var tourItem = (UCItem)ss;
                 pnlControl.Visible = false;
-                FmDetailsItem frm3 = new FmDetailsItem();
+                FmDetailsItem frm3 = new FmDetailsItem(title);
                 frm3.TopLevel = false;
                 pnlControl.Hide();
+                pnlFilter.Hide();
                 if (pnlControl.Visible == false)
                 {
                     pnlOpenChildForm.Visible = true;
@@ -104,6 +126,21 @@ namespace FinalProject
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlControl_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

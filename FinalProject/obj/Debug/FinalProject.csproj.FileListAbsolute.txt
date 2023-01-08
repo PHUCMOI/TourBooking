@@ -76,3 +76,4 @@ C:\C#\TourBooking\FinalProject\bin\Debug\RestSharp.dll
 C:\C#\TourBooking\FinalProject\bin\Debug\Newtonsoft.Json.xml
 C:\C#\TourBooking\FinalProject\bin\Debug\RestSharp.xml
 C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCDetailItem.resources

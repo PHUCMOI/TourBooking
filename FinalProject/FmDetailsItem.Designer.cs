@@ -28,47 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmDetailsItem));
+            this.lblDetails2 = new System.Windows.Forms.Panel();
             this.lblChiTiet = new System.Windows.Forms.Label();
             this.picWeatherIcon = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblTemp = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.rjButton1 = new _20521782_TranMinhPhuc_BTTH2.RJButton();
-            this.lblDetails = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblSoLuongKhach = new System.Windows.Forms.Label();
+            this.lblKhoihanh = new System.Windows.Forms.Label();
             this.pnlControl = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2.SuspendLayout();
+            this.lblDetails = new System.Windows.Forms.Label();
+            this.picDetails1 = new System.Windows.Forms.PictureBox();
+            this.picDetails2 = new System.Windows.Forms.PictureBox();
+            this.picDetails3 = new System.Windows.Forms.PictureBox();
+            this.picDetails4 = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblDetails2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWeatherIcon)).BeginInit();
             this.pnlControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails4)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // lblDetails2
             // 
-            this.panel2.Controls.Add(this.lblChiTiet);
-            this.panel2.Controls.Add(this.picWeatherIcon);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.lblTemp);
-            this.panel2.Controls.Add(this.rjButton1);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1504, 154);
-            this.panel2.TabIndex = 4;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.lblDetails2.Controls.Add(this.lblTitle);
+            this.lblDetails2.Controls.Add(this.lblChiTiet);
+            this.lblDetails2.Controls.Add(this.picWeatherIcon);
+            this.lblDetails2.Controls.Add(this.rjButton1);
+            this.lblDetails2.Controls.Add(this.lblPrice);
+            this.lblDetails2.Controls.Add(this.label5);
+            this.lblDetails2.Controls.Add(this.lblSoLuongKhach);
+            this.lblDetails2.Controls.Add(this.lblKhoihanh);
+            this.lblDetails2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblDetails2.Location = new System.Drawing.Point(0, 0);
+            this.lblDetails2.Name = "lblDetails2";
+            this.lblDetails2.Size = new System.Drawing.Size(1504, 154);
+            this.lblDetails2.TabIndex = 4;
+            this.lblDetails2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lblChiTiet
             // 
             this.lblChiTiet.AutoSize = true;
             this.lblChiTiet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChiTiet.Location = new System.Drawing.Point(1072, 100);
+            this.lblChiTiet.Location = new System.Drawing.Point(25, 106);
             this.lblChiTiet.Name = "lblChiTiet";
             this.lblChiTiet.Size = new System.Drawing.Size(74, 16);
             this.lblChiTiet.TabIndex = 8;
@@ -77,72 +84,13 @@
             // 
             // picWeatherIcon
             // 
-            this.picWeatherIcon.Location = new System.Drawing.Point(952, 53);
+            this.picWeatherIcon.Location = new System.Drawing.Point(134, 67);
             this.picWeatherIcon.Name = "picWeatherIcon";
-            this.picWeatherIcon.Size = new System.Drawing.Size(92, 71);
+            this.picWeatherIcon.Size = new System.Drawing.Size(63, 55);
+            this.picWeatherIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picWeatherIcon.TabIndex = 7;
             this.picWeatherIcon.TabStop = false;
             this.picWeatherIcon.Click += new System.EventHandler(this.picWeatherIcon_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1070, 63);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 28);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "label8";
-            // 
-            // lblTemp
-            // 
-            this.lblTemp.AutoSize = true;
-            this.lblTemp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemp.Location = new System.Drawing.Point(1070, 30);
-            this.lblTemp.Name = "lblTemp";
-            this.lblTemp.Size = new System.Drawing.Size(65, 28);
-            this.lblTemp.TabIndex = 5;
-            this.lblTemp.Text = "label7";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(673, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 31);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Giá";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(944, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 31);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Thời tiết";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(363, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 31);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Số lượng khách";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Khởi hành";
             // 
             // rjButton1
             // 
@@ -155,7 +103,7 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(1320, 32);
+            this.rjButton1.Location = new System.Drawing.Point(1304, 46);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(175, 68);
             this.rjButton1.TabIndex = 4;
@@ -163,25 +111,124 @@
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             // 
-            // lblDetails
+            // lblPrice
             // 
-            this.lblDetails.AutoSize = true;
-            this.lblDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetails.Location = new System.Drawing.Point(3, 0);
-            this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(65, 28);
-            this.lblDetails.TabIndex = 0;
-            this.lblDetails.Text = "label1";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.ForeColor = System.Drawing.Color.Red;
+            this.lblPrice.Location = new System.Drawing.Point(1325, 10);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(137, 31);
+            this.lblPrice.TabIndex = 3;
+            this.lblPrice.Text = "5,000,000 đ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(22, 79);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 31);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Thời tiết";
+            // 
+            // lblSoLuongKhach
+            // 
+            this.lblSoLuongKhach.AutoSize = true;
+            this.lblSoLuongKhach.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuongKhach.Location = new System.Drawing.Point(22, 41);
+            this.lblSoLuongKhach.Name = "lblSoLuongKhach";
+            this.lblSoLuongKhach.Size = new System.Drawing.Size(175, 31);
+            this.lblSoLuongKhach.TabIndex = 1;
+            this.lblSoLuongKhach.Text = "Số lượng khách";
+            // 
+            // lblKhoihanh
+            // 
+            this.lblKhoihanh.AutoSize = true;
+            this.lblKhoihanh.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKhoihanh.Location = new System.Drawing.Point(22, 4);
+            this.lblKhoihanh.Name = "lblKhoihanh";
+            this.lblKhoihanh.Size = new System.Drawing.Size(118, 31);
+            this.lblKhoihanh.TabIndex = 0;
+            this.lblKhoihanh.Text = "Khởi hành";
             // 
             // pnlControl
             // 
             this.pnlControl.AutoScroll = true;
             this.pnlControl.Controls.Add(this.lblDetails);
-            this.pnlControl.Location = new System.Drawing.Point(0, 161);
+            this.pnlControl.Controls.Add(this.picDetails1);
+            this.pnlControl.Controls.Add(this.picDetails2);
+            this.pnlControl.Controls.Add(this.picDetails3);
+            this.pnlControl.Controls.Add(this.picDetails4);
+            this.pnlControl.Location = new System.Drawing.Point(9, 161);
             this.pnlControl.Margin = new System.Windows.Forms.Padding(0);
             this.pnlControl.Name = "pnlControl";
-            this.pnlControl.Size = new System.Drawing.Size(1518, 562);
+            this.pnlControl.Size = new System.Drawing.Size(1535, 538);
             this.pnlControl.TabIndex = 5;
+            // 
+            // lblDetails
+            // 
+            this.lblDetails.AutoEllipsis = true;
+            this.lblDetails.AutoSize = true;
+            this.lblDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDetails.Location = new System.Drawing.Point(3, 0);
+            this.lblDetails.MaximumSize = new System.Drawing.Size(1500, 0);
+            this.lblDetails.Name = "lblDetails";
+            this.lblDetails.Size = new System.Drawing.Size(65, 28);
+            this.lblDetails.TabIndex = 0;
+            this.lblDetails.Text = "label1";
+            // 
+            // picDetails1
+            // 
+            this.picDetails1.Image = ((System.Drawing.Image)(resources.GetObject("picDetails1.Image")));
+            this.picDetails1.Location = new System.Drawing.Point(74, 3);
+            this.picDetails1.Name = "picDetails1";
+            this.picDetails1.Size = new System.Drawing.Size(484, 323);
+            this.picDetails1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDetails1.TabIndex = 3;
+            this.picDetails1.TabStop = false;
+            // 
+            // picDetails2
+            // 
+            this.picDetails2.Image = ((System.Drawing.Image)(resources.GetObject("picDetails2.Image")));
+            this.picDetails2.Location = new System.Drawing.Point(564, 3);
+            this.picDetails2.Name = "picDetails2";
+            this.picDetails2.Size = new System.Drawing.Size(484, 323);
+            this.picDetails2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDetails2.TabIndex = 4;
+            this.picDetails2.TabStop = false;
+            // 
+            // picDetails3
+            // 
+            this.picDetails3.Image = ((System.Drawing.Image)(resources.GetObject("picDetails3.Image")));
+            this.picDetails3.Location = new System.Drawing.Point(3, 332);
+            this.picDetails3.Name = "picDetails3";
+            this.picDetails3.Size = new System.Drawing.Size(477, 330);
+            this.picDetails3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDetails3.TabIndex = 5;
+            this.picDetails3.TabStop = false;
+            // 
+            // picDetails4
+            // 
+            this.picDetails4.Image = ((System.Drawing.Image)(resources.GetObject("picDetails4.Image")));
+            this.picDetails4.Location = new System.Drawing.Point(3, 668);
+            this.picDetails4.Name = "picDetails4";
+            this.picDetails4.Size = new System.Drawing.Size(1450, 457);
+            this.picDetails4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDetails4.TabIndex = 6;
+            this.picDetails4.TabStop = false;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(630, 54);
+            this.lblTitle.MaximumSize = new System.Drawing.Size(500, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(178, 46);
+            this.lblTitle.TabIndex = 9;
+            this.lblTitle.Text = "Khởi hành";
             // 
             // FmDetailsItem
             // 
@@ -190,32 +237,39 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1504, 696);
             this.Controls.Add(this.pnlControl);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.lblDetails2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmDetailsItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FmDetailsItem_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.lblDetails2.ResumeLayout(false);
+            this.lblDetails2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWeatherIcon)).EndInit();
             this.pnlControl.ResumeLayout(false);
             this.pnlControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDetails4)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel lblDetails2;
+        private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblTemp;
+        private System.Windows.Forms.Label lblSoLuongKhach;
+        private System.Windows.Forms.Label lblKhoihanh;
         private _20521782_TranMinhPhuc_BTTH2.RJButton rjButton1;
         private System.Windows.Forms.PictureBox picWeatherIcon;
         private System.Windows.Forms.Label lblChiTiet;
-        private System.Windows.Forms.Label lblDetails;
         private System.Windows.Forms.FlowLayoutPanel pnlControl;
+        private System.Windows.Forms.Label lblDetails;
+        private System.Windows.Forms.PictureBox picDetails1;
+        private System.Windows.Forms.PictureBox picDetails2;
+        private System.Windows.Forms.PictureBox picDetails3;
+        private System.Windows.Forms.PictureBox picDetails4;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

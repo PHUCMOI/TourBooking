@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmDetailsItem));
             this.lblDetails2 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.lblChiTiet = new System.Windows.Forms.Label();
             this.picWeatherIcon = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new _20521782_TranMinhPhuc_BTTH2.RJButton();
             this.lblPrice = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblSoLuongKhach = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.picDetails2 = new System.Windows.Forms.PictureBox();
             this.picDetails3 = new System.Windows.Forms.PictureBox();
             this.picDetails4 = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.rjButton1 = new _20521782_TranMinhPhuc_BTTH2.RJButton();
             this.lblDetails2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWeatherIcon)).BeginInit();
             this.pnlControl.SuspendLayout();
@@ -70,6 +70,17 @@
             this.lblDetails2.TabIndex = 4;
             this.lblDetails2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(630, 54);
+            this.lblTitle.MaximumSize = new System.Drawing.Size(500, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(178, 46);
+            this.lblTitle.TabIndex = 9;
+            this.lblTitle.Text = "Khởi hành";
+            // 
             // lblChiTiet
             // 
             this.lblChiTiet.AutoSize = true;
@@ -91,25 +102,6 @@
             this.picWeatherIcon.TabIndex = 7;
             this.picWeatherIcon.TabStop = false;
             this.picWeatherIcon.Click += new System.EventHandler(this.picWeatherIcon_Click);
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.CornflowerBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(1304, 46);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(175, 68);
-            this.rjButton1.TabIndex = 4;
-            this.rjButton1.Text = "Đặt ngay";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // lblPrice
             // 
@@ -202,7 +194,7 @@
             // picDetails3
             // 
             this.picDetails3.Image = ((System.Drawing.Image)(resources.GetObject("picDetails3.Image")));
-            this.picDetails3.Location = new System.Drawing.Point(3, 332);
+            this.picDetails3.Location = new System.Drawing.Point(1054, 3);
             this.picDetails3.Name = "picDetails3";
             this.picDetails3.Size = new System.Drawing.Size(477, 330);
             this.picDetails3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -212,23 +204,31 @@
             // picDetails4
             // 
             this.picDetails4.Image = ((System.Drawing.Image)(resources.GetObject("picDetails4.Image")));
-            this.picDetails4.Location = new System.Drawing.Point(3, 668);
+            this.picDetails4.Location = new System.Drawing.Point(3, 339);
             this.picDetails4.Name = "picDetails4";
             this.picDetails4.Size = new System.Drawing.Size(1450, 457);
             this.picDetails4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picDetails4.TabIndex = 6;
             this.picDetails4.TabStop = false;
             // 
-            // lblTitle
+            // rjButton1
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(630, 54);
-            this.lblTitle.MaximumSize = new System.Drawing.Size(500, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(178, 46);
-            this.lblTitle.TabIndex = 9;
-            this.lblTitle.Text = "Khởi hành";
+            this.rjButton1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.CornflowerBlue;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(1304, 46);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(175, 68);
+            this.rjButton1.TabIndex = 4;
+            this.rjButton1.Text = "Đặt ngay";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // FmDetailsItem
             // 

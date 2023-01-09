@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -69,7 +70,12 @@ namespace FinalProject
                     lblTitle.Text = title;
                     lblPrice.Text = DataTour.GlobalTourPrice[i];
                     city = DataTour.GlobalTourStartPlace[i];
-                }   
+                    picDetails1.Image = Base64ToImage(nodeList[i].SelectSingleNode("pic1").InnerText);
+                    picDetails2.Image = Base64ToImage(nodeList[i].SelectSingleNode("pic2").InnerText);
+                    picDetails3.Image = Base64ToImage(nodeList[i].SelectSingleNode("pic3").InnerText);
+                    picDetails4.Image = Base64ToImage(nodeList[i].SelectSingleNode("pic4").InnerText);
+
+                }
             }    
             getWeather(city);
         }
@@ -83,6 +89,15 @@ namespace FinalProject
         {
             FmWeatherInfo fmWeatherInfo = new FmWeatherInfo(city);
             fmWeatherInfo.ShowDialog();
+        }
+
+        public Image Base64ToImage(string base64String)
+        {
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            MemoryStream ms = new MemoryStream(imageBytes, 0, imageBytes.Length);
+            ms.Write(imageBytes, 0, imageBytes.Length);
+            System.Drawing.Image image = System.Drawing.Image.FromStream(ms, true);
+            return image;
         }
     }
 }

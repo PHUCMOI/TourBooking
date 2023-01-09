@@ -59,6 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectFireBase.cs" />
+    <Compile Include="FmAddTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAddTour.Designer.cs">
+      <DependentUpon>FmAddTour.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmDetailDayWeather.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <Compile Include="Weather5Days.cs" />
     <Compile Include="WeatherForecast.cs" />
     <Compile Include="WeatherInfo.cs" />
+    <EmbeddedResource Include="FmAddTour.resx">
+      <DependentUpon>FmAddTour.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmDetailDayWeather.resx">
       <DependentUpon>FmDetailDayWeather.cs</DependentUpon>
     </EmbeddedResource>

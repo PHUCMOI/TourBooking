@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +25,7 @@ namespace FinalProject
             private static List<string> TourCount = new List<string>();
             private static List<string> TourStart = new List<string>();
             private static List<string> TourStartPlace = new List<string>();
-
-
+            private static List<string> TourImage = new List<string>();
 
 
             public static List<string> GlobalTourTitle
@@ -63,6 +63,11 @@ namespace FinalProject
                 get { return TourStartPlace; }
                 set { TourStartPlace.Add(value.ToString()); }
             }
+            public static List<string> GlobalTourImage
+            {
+                get { return TourImage; }
+                set { TourImage.Add(value.ToString()); }
+            }
         }
         public FmHome()
         {
@@ -83,22 +88,23 @@ namespace FinalProject
                 DataTour.GlobalTourCount.Add(nodeList[i].SelectSingleNode("count").InnerText);
                 DataTour.GlobalTourStart.Add(nodeList[i].SelectSingleNode("start").InnerText);
                 DataTour.GlobalTourStartPlace.Add(nodeList[i].SelectSingleNode("startPlace").InnerText);
+                DataTour.GlobalTourImage.Add(nodeList[i].SelectSingleNode("pic1").InnerText);
 
                 AddTourItem(DataTour.GlobalTourTitle[i],
                     DataTour.GlobalTourTime[i],
                     DataTour.GlobalTourPrice[i],
-                    DataTour.GlobalTourStartPlace[i] + ".jpg");
+                    Base64ToImage(DataTour.GlobalTourImage[i]));
             }
         }
 
-        public void AddTourItem(string title, string time, string price, string image)
+        public void AddTourItem(string title, string time, string price, Image image)
         {
             var m = new UCItem()
             {
                 Title = title,
                 Time = time,
                 Price = price,
-                ImageTour = Image.FromFile("..//..//image/" + image)
+                ImageTour = image
             };
 
             pnlControl.Controls.Add(m); 
@@ -132,15 +138,26 @@ namespace FinalProject
         {
 
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FmAddTour fm = new FmAddTour();
+            fm.ShowDialog();
+            this.Show();
         }
 
         private void pnlControl_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public Image Base64ToImage(string base64String)
+        {
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            MemoryStream ms = new MemoryStream(imageBytes, 0, imageBytes.Length);
+            ms.Write(imageBytes, 0, imageBytes.Length);
+            System.Drawing.Image image = System.Drawing.Image.FromStream(ms, true);
+            return image;
         }
     }
 }

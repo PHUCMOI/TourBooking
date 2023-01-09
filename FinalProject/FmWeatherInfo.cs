@@ -81,7 +81,6 @@ namespace FinalProject
                         "https://openweathermap.org/img/w/" + FmDetailsItem.weather5s[i].getset_weatherIcon[0] + ".png");
                 }
             }
-
         }
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {

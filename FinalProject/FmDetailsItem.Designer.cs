@@ -43,7 +43,7 @@
             this.picDetails2 = new System.Windows.Forms.PictureBox();
             this.picDetails3 = new System.Windows.Forms.PictureBox();
             this.picDetails4 = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new _20521782_TranMinhPhuc_BTTH2.RJButton();
+            this.btnDatTour = new _20521782_TranMinhPhuc_BTTH2.RJButton();
             this.lblDetails2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWeatherIcon)).BeginInit();
             this.pnlControl.SuspendLayout();
@@ -58,7 +58,7 @@
             this.lblDetails2.Controls.Add(this.lblTitle);
             this.lblDetails2.Controls.Add(this.lblChiTiet);
             this.lblDetails2.Controls.Add(this.picWeatherIcon);
-            this.lblDetails2.Controls.Add(this.rjButton1);
+            this.lblDetails2.Controls.Add(this.btnDatTour);
             this.lblDetails2.Controls.Add(this.lblPrice);
             this.lblDetails2.Controls.Add(this.label5);
             this.lblDetails2.Controls.Add(this.lblSoLuongKhach);
@@ -167,7 +167,7 @@
             this.lblDetails.Location = new System.Drawing.Point(3, 0);
             this.lblDetails.MaximumSize = new System.Drawing.Size(1500, 0);
             this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(65, 28);
+            this.lblDetails.Size = new System.Drawing.Size(65, 0);
             this.lblDetails.TabIndex = 0;
             this.lblDetails.Text = "label1";
             // 
@@ -211,24 +211,25 @@
             this.picDetails4.TabIndex = 6;
             this.picDetails4.TabStop = false;
             // 
-            // rjButton1
+            // btnDatTour
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.CornflowerBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(1304, 46);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(175, 68);
-            this.rjButton1.TabIndex = 4;
-            this.rjButton1.Text = "Đặt ngay";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnDatTour.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnDatTour.BackgroundColor = System.Drawing.Color.CornflowerBlue;
+            this.btnDatTour.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDatTour.BorderRadius = 20;
+            this.btnDatTour.BorderSize = 0;
+            this.btnDatTour.FlatAppearance.BorderSize = 0;
+            this.btnDatTour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatTour.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatTour.ForeColor = System.Drawing.Color.White;
+            this.btnDatTour.Location = new System.Drawing.Point(1304, 46);
+            this.btnDatTour.Name = "btnDatTour";
+            this.btnDatTour.Size = new System.Drawing.Size(175, 68);
+            this.btnDatTour.TabIndex = 4;
+            this.btnDatTour.Text = "Đặt ngay";
+            this.btnDatTour.TextColor = System.Drawing.Color.White;
+            this.btnDatTour.UseVisualStyleBackColor = false;
+            this.btnDatTour.Click += new System.EventHandler(this.btnDatTour_Click);
             // 
             // FmDetailsItem
             // 
@@ -261,7 +262,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblSoLuongKhach;
         private System.Windows.Forms.Label lblKhoihanh;
-        private _20521782_TranMinhPhuc_BTTH2.RJButton rjButton1;
+        private _20521782_TranMinhPhuc_BTTH2.RJButton btnDatTour;
         private System.Windows.Forms.PictureBox picWeatherIcon;
         private System.Windows.Forms.Label lblChiTiet;
         private System.Windows.Forms.FlowLayoutPanel pnlControl;

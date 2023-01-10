@@ -48,11 +48,6 @@ namespace FinalProject
 
             return day;
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -69,7 +64,7 @@ namespace FinalProject
                     lblDetails.Text = DataTour.GlobalTourDetails[i];
                     lblTitle.Text = title;
                     lblPrice.Text = DataTour.GlobalTourPrice[i];
-                    city = DataTour.GlobalTourStartPlace[i];
+                    city = DataTour.GlobalTourDestination[i];
                     picDetails1.Image = Base64ToImage(nodeList[i].SelectSingleNode("pic1").InnerText);
                     picDetails2.Image = Base64ToImage(nodeList[i].SelectSingleNode("pic2").InnerText);
                     picDetails3.Image = Base64ToImage(nodeList[i].SelectSingleNode("pic3").InnerText);
@@ -98,6 +93,12 @@ namespace FinalProject
             ms.Write(imageBytes, 0, imageBytes.Length);
             System.Drawing.Image image = System.Drawing.Image.FromStream(ms, true);
             return image;
+        }
+
+        private void btnDatTour_Click(object sender, EventArgs e)
+        {
+            FmInformationCustomer fmInformationCustomer = new FmInformationCustomer();
+            fmInformationCustomer.ShowDialog(); 
         }
     }
 }

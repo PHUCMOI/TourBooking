@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using System.Diagnostics;
+using Image = System.Drawing.Image;
 
 namespace FinalProject
 {
@@ -87,15 +91,22 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtTitle.Text != "" || txtTime.Text != "" || txtStartPlace.Text != "" || txtDestination.Text != "" || txtPrice.Text != "" || txtCount.Text != "" || txtSchedule.Text != "" || pic1 != "" || pic2 != "" || pic3 != "" || pic4 != "")
-            {
-                AddItem(txtTitle.Text, txtTime.Text, txtStartPlace.Text, txtDestination.Text, txtPrice.Text, txtdateStart.Text, txtCount.Text, txtSchedule.Text, pic1, pic2, pic3, pic4);
 
+            FmHome fmHome = new FmHome();
+            fmHome.Sender("1");
+            fmHome.Show();
+            AddItem(txtTitle.Text, txtTime.Text, txtStartPlace.Text, txtDestination.Text, txtPrice.Text, txtdateStart.Text, txtCount.Text, txtSchedule.Text, pic1, pic2, pic3, pic4);
+            
+            /*if (txtTitle.Text != "" || txtTime.Text != "" || txtStartPlace.Text != "" || txtDestination.Text != "" || txtPrice.Text != "" || txtCount.Text != "" || txtSchedule.Text != "" || pic1 != "" || pic2 != "" || pic3 != "" || pic4 != "")
+            {
+                
             }    
             else
             {
                 MessageBox.Show("Vui lòng điền đủ thông tin");
-            }
+            }*/
+            //ButtonFirstFormClicked?.Invoke(sender, e);
+          
         }
 
         public string ImageToBase64(string path)
@@ -128,25 +139,28 @@ namespace FinalProject
         {
             opendig();
             pic4 = ImageToBase64(url);
+            pictureBox4.Image = Base64ToImage(ImageToBase64(url));
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             opendig();
             pic3 = ImageToBase64(url);
+            pictureBox3.Image = Base64ToImage(ImageToBase64(url));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             opendig();
             pic2 = ImageToBase64(url);
-            //pictureBox2.Image = Base64ToImage(ImageToBase64(url));
+            pictureBox2.Image = Base64ToImage(ImageToBase64(url));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             opendig();
             pic1 = ImageToBase64(url);
+            pictureBox1.Image = Base64ToImage(ImageToBase64(url));
         }
 
         public void opendig()
@@ -158,10 +172,11 @@ namespace FinalProject
 
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    pictureBox1.Image = new Bitmap(dlg.FileName);
+                    //pictureBox1.Image = new Bitmap(dlg.FileName);
                     url = dlg.FileName;
                 }
             }
         }
+
     }
 }

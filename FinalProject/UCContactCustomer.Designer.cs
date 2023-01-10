@@ -41,7 +41,7 @@
             // txtEmailCus
             // 
             this.txtEmailCus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailCus.Location = new System.Drawing.Point(553, 51);
+            this.txtEmailCus.Location = new System.Drawing.Point(622, 51);
             this.txtEmailCus.Name = "txtEmailCus";
             this.txtEmailCus.Size = new System.Drawing.Size(466, 34);
             this.txtEmailCus.TabIndex = 3;
@@ -50,7 +50,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(548, 19);
+            this.label2.Location = new System.Drawing.Point(617, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 28);
             this.label2.TabIndex = 2;
@@ -95,7 +95,7 @@
             // txtAddressCus
             // 
             this.txtAddressCus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddressCus.Location = new System.Drawing.Point(553, 134);
+            this.txtAddressCus.Location = new System.Drawing.Point(622, 134);
             this.txtAddressCus.Name = "txtAddressCus";
             this.txtAddressCus.Size = new System.Drawing.Size(466, 34);
             this.txtAddressCus.TabIndex = 7;
@@ -104,7 +104,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(548, 102);
+            this.label4.Location = new System.Drawing.Point(617, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 28);
             this.label4.TabIndex = 6;
@@ -115,6 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.txtAddressCus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPhoneCus);
@@ -124,7 +125,7 @@
             this.Controls.Add(this.txtNameCus);
             this.Controls.Add(this.label1);
             this.Name = "UCContactCustomer";
-            this.Size = new System.Drawing.Size(1052, 183);
+            this.Size = new System.Drawing.Size(1110, 181);
             this.ResumeLayout(false);
             this.PerformLayout();
 

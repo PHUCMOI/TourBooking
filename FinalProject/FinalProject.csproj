@@ -83,6 +83,18 @@
     <Compile Include="FmHome.Designer.cs">
       <DependentUpon>FmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmInformationCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmInformationCustomer.Designer.cs">
+      <DependentUpon>FmInformationCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmSendGamilCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmSendGamilCus.Designer.cs">
+      <DependentUpon>FmSendGamilCus.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmSignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     <Compile Include="RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UCContactCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCContactCustomer.Designer.cs">
+      <DependentUpon>UCContactCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCDayDetailWeather.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -124,6 +142,12 @@
     </Compile>
     <Compile Include="UCForecast5Days.Designer.cs">
       <DependentUpon>UCForecast5Days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGetInformationCus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGetInformationCus.Designer.cs">
+      <DependentUpon>UCGetInformationCus.cs</DependentUpon>
     </Compile>
     <Compile Include="UCItem.cs">
       <SubType>UserControl</SubType>
@@ -146,6 +170,12 @@
     <EmbeddedResource Include="FmHome.resx">
       <DependentUpon>FmHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FmInformationCustomer.resx">
+      <DependentUpon>FmInformationCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmSendGamilCus.resx">
+      <DependentUpon>FmSendGamilCus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmSignIn.resx">
       <DependentUpon>FmSignIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +190,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCContactCustomer.resx">
+      <DependentUpon>UCContactCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCDayDetailWeather.resx">
       <DependentUpon>UCDayDetailWeather.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCForecast5Days.resx">
       <DependentUpon>UCForecast5Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGetInformationCus.resx">
+      <DependentUpon>UCGetInformationCus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCItem.resx">
       <DependentUpon>UCItem.cs</DependentUpon>

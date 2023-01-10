@@ -14,8 +14,12 @@ namespace FinalProject
 {
     public partial class FmHome : Form
     {
+        public delegate void SendMessage(string Message);
+        public SendMessage Sender;
+
         public static XmlDocument xmlDoc = new XmlDocument();
         public static XmlNodeList nodeList, dayList;
+
         public static class DataTour
         {
             private static List<string> TourTitle = new List<string>();
@@ -25,6 +29,7 @@ namespace FinalProject
             private static List<string> TourCount = new List<string>();
             private static List<string> TourStart = new List<string>();
             private static List<string> TourStartPlace = new List<string>();
+            private static List<string> TourDestination = new List<string>();
             private static List<string> TourImage = new List<string>();
 
 
@@ -68,10 +73,33 @@ namespace FinalProject
                 get { return TourImage; }
                 set { TourImage.Add(value.ToString()); }
             }
+            public static List<string> GlobalTourDestination
+            {
+                get { return TourDestination; }
+                set { TourDestination.Add(value.ToString()); }
+            }
         }
         public FmHome()
         {
             InitializeComponent();
+            Sender = new SendMessage(GetMessage);
+        }
+        private void GetMessage(string Message)
+        {
+            if(Message == "1")
+            {
+                xmlDoc.Load("..//..//data.xml");
+
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/tours/" + "/tour");
+                var m = new UCItem()
+                {
+                    Title = nodeList[nodeList.Count].SelectSingleNode("title").InnerText,
+                    Time = nodeList[nodeList.Count].SelectSingleNode("time").InnerText,
+                    Price = nodeList[nodeList.Count].SelectSingleNode("price").InnerText,
+                    ImageTour = Base64ToImage(nodeList[nodeList.Count].SelectSingleNode("pic1").InnerText)
+                };
+                pnlControl.Controls.Add(m);
+            }    
         }
 
         private void FmHome_Load(object sender, EventArgs e)
@@ -88,6 +116,7 @@ namespace FinalProject
                 DataTour.GlobalTourCount.Add(nodeList[i].SelectSingleNode("count").InnerText);
                 DataTour.GlobalTourStart.Add(nodeList[i].SelectSingleNode("start").InnerText);
                 DataTour.GlobalTourStartPlace.Add(nodeList[i].SelectSingleNode("startPlace").InnerText);
+                DataTour.GlobalTourDestination.Add(nodeList[i].SelectSingleNode("destination").InnerText);
                 DataTour.GlobalTourImage.Add(nodeList[i].SelectSingleNode("pic1").InnerText);
 
                 AddTourItem(DataTour.GlobalTourTitle[i],
@@ -97,7 +126,7 @@ namespace FinalProject
             }
         }
 
-        public void AddTourItem(string title, string time, string price, Image image)
+    public void AddTourItem(string title, string time, string price, Image image)
         {
             var m = new UCItem()
             {
@@ -149,6 +178,12 @@ namespace FinalProject
         private void pnlControl_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnGmail_Click(object sender, EventArgs e)
+        {
+            FmSendGamilCus fmSendGamilCus = new FmSendGamilCus();
+            fmSendGamilCus.ShowDialog();
         }
 
         public Image Base64ToImage(string base64String)

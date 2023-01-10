@@ -78,3 +78,7 @@ C:\C#\TourBooking\FinalProject\bin\Debug\RestSharp.xml
 C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
 C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCDetailItem.resources
 C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.FmAddTour.resources
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCContactCustomer.resources
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCGetInformationCus.resources
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.FmSendGamilCus.resources
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.FmInformationCustomer.resources

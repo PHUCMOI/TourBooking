@@ -16,5 +16,13 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+        
+        
+        public string NameCus { get => txtNameCus.Text; set => txtNameCus.Text = value; }
+        public string EmailCus { get => txtEmailCus.Text; set => txtEmailCus.Text = value;  }
+        public string PhoneCus { get => txtPhoneCus.Text; set => txtPhoneCus.Text = value;  }
+        public string AddressCus { get => txtAddressCus.Text; set => txtAddressCus.Text = value; }
+
+        
     }
 }

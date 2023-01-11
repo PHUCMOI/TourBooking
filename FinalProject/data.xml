@@ -4,7 +4,7 @@
     <time>4 ngày 3 đêm</time>
     <startPlace>Ho Chi Minh</startPlace>
     <destination>Ho Chi Minh</destination>
-    <price>	5,988,000 đ	</price>
+    <price>5,988,000</price>
     <start>10/01/2023</start>
     <count>20</count>
     <schedule>
@@ -54,7 +54,7 @@
     <time>5 ngày 4 đêm</time>
     <startPlace>Hồ Chí Minh</startPlace>
     <destination>Bangkok</destination>
-    <price>7,990,000₫</price>
+    <price>7,990,000</price>
     <start>Thursday, January 12, 2023</start>
     <count>30</count>
     <schedule>Ngày 1 - TP.HCM - BANGKOK – WAT BENCHAMABOPHIT – ICON SIAM &amp; WATER MUSIC SHOW (Ăn tối)

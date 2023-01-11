@@ -97,7 +97,7 @@ namespace FinalProject
 
         private void btnDatTour_Click(object sender, EventArgs e)
         {
-            FmInformationCustomer fmInformationCustomer = new FmInformationCustomer();
+            FmInformationCustomer fmInformationCustomer = new FmInformationCustomer(lblTitle.Text, lblKhoihanh.Text, picDetails1.Image, lblPrice.Text);
             fmInformationCustomer.ShowDialog(); 
         }
     }

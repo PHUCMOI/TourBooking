@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FinalProject
 {
@@ -29,19 +30,19 @@ namespace FinalProject
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (txtName.Text == "Giới tính")
+            if (txtGender.Text == "Giới tính")
             {
-                txtName.Text = "";
-                txtName.ForeColor = Color.Black;
+                txtGender.Text = "";
+                txtGender.ForeColor = Color.Black;
             }
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (txtName.Text == "")
+            if (txtGender.Text == "")
             {
-                txtName.Text = "Giới tính";
-                txtName.ForeColor = Color.Black;
+                txtGender.Text = "Giới tính";
+                txtGender.ForeColor = Color.Silver;
             }
         }
 
@@ -56,7 +57,7 @@ namespace FinalProject
 
         private void UCGetInformationCus_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

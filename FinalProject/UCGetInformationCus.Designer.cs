@@ -111,7 +111,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Name = "UCGetInformationCus";
-            this.Size = new System.Drawing.Size(1110, 91);
+            this.Size = new System.Drawing.Size(1106, 91);
             this.Load += new System.EventHandler(this.UCGetInformationCus_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,10 +121,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtGender;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtGender;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

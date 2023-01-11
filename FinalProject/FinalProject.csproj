@@ -33,11 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="FireSharp, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FireSharp.1.1.0\lib\net45\FireSharp.dll</HintPath>
     </Reference>
     <Reference Include="FireSharp.Serialization.JsonNet, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FireSharp.Serialization.JsonNet.1.1.0\lib\net45\FireSharp.Serialization.JsonNet.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -58,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Booked.cs" />
     <Compile Include="ConnectFireBase.cs" />
     <Compile Include="FmAddTour.cs">
       <SubType>Form</SubType>
@@ -89,6 +96,12 @@
     <Compile Include="FmInformationCustomer.Designer.cs">
       <DependentUpon>FmInformationCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmPayment.Designer.cs">
+      <DependentUpon>FmPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmSendGamilCus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +127,7 @@
       <DependentUpon>FmWeatherInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageAccount.cs" />
+    <Compile Include="NewTour.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJButton.cs">
@@ -130,6 +144,12 @@
     </Compile>
     <Compile Include="UCDayDetailWeather.Designer.cs">
       <DependentUpon>UCDayDetailWeather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDeatilCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDeatilCustomer.Designer.cs">
+      <DependentUpon>UCDeatilCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="UCDetailItem.cs">
       <SubType>UserControl</SubType>
@@ -173,6 +193,9 @@
     <EmbeddedResource Include="FmInformationCustomer.resx">
       <DependentUpon>FmInformationCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FmPayment.resx">
+      <DependentUpon>FmPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmSendGamilCus.resx">
       <DependentUpon>FmSendGamilCus.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCDayDetailWeather.resx">
       <DependentUpon>UCDayDetailWeather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDeatilCustomer.resx">
+      <DependentUpon>UCDeatilCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCDetailItem.resx">
       <DependentUpon>UCDetailItem.cs</DependentUpon>
@@ -223,6 +249,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="times-ro.ttf" />
+    <None Include="VAVOBI.TTF" />
+    <None Include="vuArial.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

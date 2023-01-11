@@ -125,21 +125,20 @@
             this.Controls.Add(this.txtNameCus);
             this.Controls.Add(this.label1);
             this.Name = "UCContactCustomer";
-            this.Size = new System.Drawing.Size(1110, 181);
+            this.Size = new System.Drawing.Size(1105, 181);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtEmailCus;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNameCus;
-        private System.Windows.Forms.TextBox txtPhoneCus;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtAddressCus;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtEmailCus;
+        public System.Windows.Forms.TextBox txtNameCus;
+        public System.Windows.Forms.TextBox txtPhoneCus;
+        public System.Windows.Forms.TextBox txtAddressCus;
     }
 }

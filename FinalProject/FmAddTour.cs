@@ -85,6 +85,8 @@ namespace FinalProject
             pic4_.InnerText = pic4;
             item.AppendChild(pic4_);
 
+            MessageBox.Show("123");
+
             root.AppendChild(item);
             doc.Save(fileName);
         }
@@ -92,10 +94,10 @@ namespace FinalProject
         private void button1_Click(object sender, EventArgs e)
         {
 
+            AddItem(txtTitle.Text, txtTime.Text, txtStartPlace.Text, txtDestination.Text, txtPrice.Text, txtdateStart.Text, txtCount.Text, txtSchedule.Text, pic1, pic2, pic3, pic4);
             FmHome fmHome = new FmHome();
             fmHome.Sender("1");
             fmHome.Show();
-            AddItem(txtTitle.Text, txtTime.Text, txtStartPlace.Text, txtDestination.Text, txtPrice.Text, txtdateStart.Text, txtCount.Text, txtSchedule.Text, pic1, pic2, pic3, pic4);
             
             /*if (txtTitle.Text != "" || txtTime.Text != "" || txtStartPlace.Text != "" || txtDestination.Text != "" || txtPrice.Text != "" || txtCount.Text != "" || txtSchedule.Text != "" || pic1 != "" || pic2 != "" || pic3 != "" || pic4 != "")
             {
@@ -147,6 +149,11 @@ namespace FinalProject
             opendig();
             pic3 = ImageToBase64(url);
             pictureBox3.Image = Base64ToImage(ImageToBase64(url));
+        }
+
+        private void FmAddTour_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void button3_Click(object sender, EventArgs e)

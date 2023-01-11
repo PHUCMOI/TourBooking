@@ -82,3 +82,8 @@ C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCContactCustomer.resource
 C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCGetInformationCus.resources
 C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.FmSendGamilCus.resources
 C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.FmInformationCustomer.resources
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.FmPayment.resources
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCDeatilCustomer.resources
+C:\C#\TourBooking\FinalProject\bin\Debug\BouncyCastle.Crypto.dll
+C:\C#\TourBooking\FinalProject\bin\Debug\itextsharp.dll
+C:\C#\TourBooking\FinalProject\bin\Debug\itextsharp.xml

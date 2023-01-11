@@ -37,19 +37,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
-            this.lblStartDay = new System.Windows.Forms.Label();
-            this.lblTour = new System.Windows.Forms.Label();
             this.picTour = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblTour = new System.Windows.Forms.Label();
+            this.lblStartDay = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.PictureBox();
             this.ucContactCustomer1 = new FinalProject.UCContactCustomer();
             this.btnDatTour = new _20521782_TranMinhPhuc_BTTH2.RJButton();
             this.pnlBill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTour)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlControl
@@ -144,16 +144,22 @@
             this.lblPrice.TabIndex = 6;
             this.lblPrice.Text = "10,000,000 đ\r\n";
             // 
-            // lblStartDay
+            // picTour
             // 
-            this.lblStartDay.AutoSize = true;
-            this.lblStartDay.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStartDay.Location = new System.Drawing.Point(71, 0);
-            this.lblStartDay.MaximumSize = new System.Drawing.Size(340, 0);
-            this.lblStartDay.Name = "lblStartDay";
-            this.lblStartDay.Size = new System.Drawing.Size(125, 0);
-            this.lblStartDay.TabIndex = 2;
-            this.lblStartDay.Text = "Khoi hanh";
+            this.picTour.Location = new System.Drawing.Point(4, 4);
+            this.picTour.Name = "picTour";
+            this.picTour.Size = new System.Drawing.Size(351, 235);
+            this.picTour.TabIndex = 0;
+            this.picTour.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.lblTour);
+            this.flowLayoutPanel1.Controls.Add(this.lblStartDay);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 240);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(351, 128);
+            this.flowLayoutPanel1.TabIndex = 10;
             // 
             // lblTour
             // 
@@ -162,17 +168,20 @@
             this.lblTour.Location = new System.Drawing.Point(3, 0);
             this.lblTour.MaximumSize = new System.Drawing.Size(340, 0);
             this.lblTour.Name = "lblTour";
-            this.lblTour.Size = new System.Drawing.Size(62, 0);
+            this.lblTour.Size = new System.Drawing.Size(62, 32);
             this.lblTour.TabIndex = 1;
             this.lblTour.Text = "Tour";
             // 
-            // picTour
+            // lblStartDay
             // 
-            this.picTour.Location = new System.Drawing.Point(4, 4);
-            this.picTour.Name = "picTour";
-            this.picTour.Size = new System.Drawing.Size(351, 235);
-            this.picTour.TabIndex = 0;
-            this.picTour.TabStop = false;
+            this.lblStartDay.AutoSize = true;
+            this.lblStartDay.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStartDay.Location = new System.Drawing.Point(71, 0);
+            this.lblStartDay.MaximumSize = new System.Drawing.Size(340, 0);
+            this.lblStartDay.Name = "lblStartDay";
+            this.lblStartDay.Size = new System.Drawing.Size(125, 32);
+            this.lblStartDay.TabIndex = 2;
+            this.lblStartDay.Text = "Khoi hanh";
             // 
             // btnExit
             // 
@@ -185,15 +194,6 @@
             this.btnExit.TabIndex = 6;
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.lblTour);
-            this.flowLayoutPanel1.Controls.Add(this.lblStartDay);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 240);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(351, 128);
-            this.flowLayoutPanel1.TabIndex = 10;
             // 
             // ucContactCustomer1
             // 
@@ -241,6 +241,7 @@
             this.Controls.Add(this.pnlControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmInformationCustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmInformationCustomer";
             this.Load += new System.EventHandler(this.FmInformationCustomer_Load);
             this.pnlBill.ResumeLayout(false);
@@ -248,9 +249,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnPlus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTour)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.ResumeLayout(false);
 
         }

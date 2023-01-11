@@ -35,7 +35,7 @@ namespace FinalProject
                 string url = string.Format("http://api.openweathermap.org/data/2.5/forecast?q={0}&appid=2724b06529928acbf2189721ec01ea17", city);
                 var json = web.DownloadString(url);
                 WeatherForecast forecastInfo = JsonConvert.DeserializeObject<WeatherForecast>(json);
-                lblTitle.Text = forecastInfo.city.name;
+                lblTitle.Text = "Thời tiết tại " + forecastInfo.city.name;
                 int a = 0;
                 for (int i = 0; i < forecastInfo.list.Count; i++)
                 {
@@ -54,7 +54,7 @@ namespace FinalProject
                         if (FmDetailsItem.weather5s[i].getset_Day == convertDateTime(forecastInfo.list[j].dt).DayOfWeek.ToString())
                         {
                             FmDetailsItem.weather5s[i].getset_weatherIcon.Add(forecastInfo.list[j].weather[0].icon);
-                            FmDetailsItem.weather5s[i].getset_weatherTime.Add((forecastInfo.list[j].dt_txt).Substring(0, 10));
+                            FmDetailsItem.weather5s[i].getset_weatherTime.Add((forecastInfo.list[j].dt_txt));
                             FmDetailsItem.weather5s[i].getset_weatherMain.Add(forecastInfo.list[j].weather[0].main);
                             FmDetailsItem.weather5s[i].getset_weatherTempMax.Add(Math.Round(forecastInfo.list[j].main.temp_max - 273.15, 2));
                             FmDetailsItem.weather5s[i].getset_weatherTempMin.Add(Math.Round(forecastInfo.list[j].main.temp_min - 273.15, 2));
@@ -75,7 +75,7 @@ namespace FinalProject
                     AddWeatherDetails(FmDetailsItem.weather5s[i].getset_weatherTime[0],
                         FmDetailsItem.weather5s[i].getset_Day,
                         FmDetailsItem.weather5s[i].getset_weatherMain[0],
-                        "Cao: " + FmDetailsItem.weather5s[i].getset_weatherTempMax.Max().ToString() + "°C  Thấp" + FmDetailsItem.weather5s[i].getset_weatherTempMin.Min().ToString() + "°C",
+                        "Cao: " + FmDetailsItem.weather5s[i].getset_weatherTempMax.Max().ToString() + "°C \n     Thấp: " + FmDetailsItem.weather5s[i].getset_weatherTempMin.Min().ToString() + "°C",
                         Math.Round(FmDetailsItem.weather5s[i].getset_weatherHumdity.Average(), 2).ToString() + "%",
                         Math.Round(FmDetailsItem.weather5s[i].getset_weatherWind.Average(), 2).ToString() + "m/s",
                         "https://openweathermap.org/img/w/" + FmDetailsItem.weather5s[i].getset_weatherIcon[0] + ".png");
@@ -126,10 +126,10 @@ namespace FinalProject
             {
                 Time = time,
                 Day = day,
-                Main = main,
-                temp = temp,
-                wind = wind,
-                humidity = humidity,
+                Main = "Bầu trời: " + main,
+                temp = "Nhiệt độ: " + temp.Substring(0, 10),
+                wind = "Tốc độ gió: " + wind,
+                humidity = "Độ ẩm: " + humidity,
                 image = image
             };
 
@@ -153,6 +153,11 @@ namespace FinalProject
                     frm3.Show();
                 }
             };
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

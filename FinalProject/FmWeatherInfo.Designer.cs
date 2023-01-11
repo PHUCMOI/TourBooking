@@ -32,10 +32,10 @@
             this.pnlControl = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnlDetailDayWeather = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.pnlDetailDayWeather = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -44,7 +44,7 @@
             // pnlControl
             // 
             this.pnlControl.AutoScroll = true;
-            this.pnlControl.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlControl.BackColor = System.Drawing.Color.White;
             this.pnlControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlControl.Location = new System.Drawing.Point(0, 100);
             this.pnlControl.Name = "pnlControl";
@@ -56,7 +56,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(532, 12);
+            this.lblTitle.Location = new System.Drawing.Point(520, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(470, 46);
             this.lblTitle.TabIndex = 4;
@@ -72,6 +72,13 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Tournament";
             // 
+            // pnlDetailDayWeather
+            // 
+            this.pnlDetailDayWeather.Location = new System.Drawing.Point(346, 12);
+            this.pnlDetailDayWeather.Name = "pnlDetailDayWeather";
+            this.pnlDetailDayWeather.Size = new System.Drawing.Size(143, 82);
+            this.pnlDetailDayWeather.TabIndex = 9;
+            // 
             // btnBack
             // 
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -82,6 +89,7 @@
             this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBack.TabIndex = 8;
             this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // btnExit
             // 
@@ -103,13 +111,6 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 6;
             this.picLogo.TabStop = false;
-            // 
-            // pnlDetailDayWeather
-            // 
-            this.pnlDetailDayWeather.Location = new System.Drawing.Point(346, 12);
-            this.pnlDetailDayWeather.Name = "pnlDetailDayWeather";
-            this.pnlDetailDayWeather.Size = new System.Drawing.Size(143, 82);
-            this.pnlDetailDayWeather.TabIndex = 9;
             // 
             // FmWeatherInfo
             // 

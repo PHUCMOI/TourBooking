@@ -99,8 +99,9 @@ namespace FinalProject
                 }
             }  
             FmPayment fmPayment = new FmPayment(TourName, KhoiHanh, picTour_, lblPrice.Text);
+            this.Hide();
             fmPayment.ShowDialog();
-            this.Close();
+            this.Show();
         }
     }
 }

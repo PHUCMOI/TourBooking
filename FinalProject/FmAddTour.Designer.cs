@@ -347,6 +347,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FmAddTour";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm tour mới";
             this.Load += new System.EventHandler(this.FmAddTour_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

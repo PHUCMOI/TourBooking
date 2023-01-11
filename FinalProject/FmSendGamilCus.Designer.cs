@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSendGamilCus));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtFrom = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtFrom = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblLinkFiles = new System.Windows.Forms.Label();
+            this.btnSend = new System.Windows.Forms.Button();
             this.txtBody = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnSend = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.lblLinkFiles = new System.Windows.Forms.Label();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,15 +58,22 @@
             this.panel1.Size = new System.Drawing.Size(618, 91);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // txtPassword
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "From";
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(137, 49);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '•';
+            this.txtPassword.Size = new System.Drawing.Size(462, 34);
+            this.txtPassword.TabIndex = 3;
+            // 
+            // txtFrom
+            // 
+            this.txtFrom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFrom.Location = new System.Drawing.Point(137, 9);
+            this.txtFrom.Name = "txtFrom";
+            this.txtFrom.Size = new System.Drawing.Size(462, 34);
+            this.txtFrom.TabIndex = 2;
             // 
             // label2
             // 
@@ -78,22 +85,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
-            // txtFrom
+            // label1
             // 
-            this.txtFrom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFrom.Location = new System.Drawing.Point(137, 9);
-            this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(462, 34);
-            this.txtFrom.TabIndex = 2;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(137, 49);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(462, 34);
-            this.txtPassword.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "From";
             // 
             // panel2
             // 
@@ -109,23 +109,29 @@
             this.panel2.Size = new System.Drawing.Size(618, 468);
             this.panel2.TabIndex = 1;
             // 
-            // txtTitle
+            // lblLinkFiles
             // 
-            this.txtTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.Location = new System.Drawing.Point(137, 10);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(462, 34);
-            this.txtTitle.TabIndex = 5;
+            this.lblLinkFiles.AutoSize = true;
+            this.lblLinkFiles.Location = new System.Drawing.Point(292, 387);
+            this.lblLinkFiles.Name = "lblLinkFiles";
+            this.lblLinkFiles.Size = new System.Drawing.Size(44, 16);
+            this.lblLinkFiles.TabIndex = 11;
+            this.lblLinkFiles.Text = "label5";
             // 
-            // label3
+            // btnSend
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 28);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Title";
+            this.btnSend.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSend.FlatAppearance.BorderSize = 0;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.ForeColor = System.Drawing.Color.White;
+            this.btnSend.Location = new System.Drawing.Point(137, 414);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(133, 40);
+            this.btnSend.TabIndex = 9;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtBody
             // 
@@ -147,20 +153,27 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Body";
             // 
-            // btnSend
+            // txtTitle
             // 
-            this.btnSend.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSend.FlatAppearance.BorderSize = 0;
-            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSend.ForeColor = System.Drawing.Color.White;
-            this.btnSend.Location = new System.Drawing.Point(137, 414);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(133, 40);
-            this.btnSend.TabIndex = 9;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = false;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.txtTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.Location = new System.Drawing.Point(137, 10);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(462, 34);
+            this.txtTitle.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(17, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 28);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Title";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // linkLabel1
             // 
@@ -178,19 +191,6 @@
             this.linkLabel1.Text = "     Attach Files";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // lblLinkFiles
-            // 
-            this.lblLinkFiles.AutoSize = true;
-            this.lblLinkFiles.Location = new System.Drawing.Point(292, 387);
-            this.lblLinkFiles.Name = "lblLinkFiles";
-            this.lblLinkFiles.Size = new System.Drawing.Size(44, 16);
-            this.lblLinkFiles.TabIndex = 11;
-            this.lblLinkFiles.Text = "label5";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // FmSendGamilCus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -200,6 +200,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FmSendGamilCus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact with admin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -92,7 +92,7 @@
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(300, 256);
+            this.txtMatKhau.Location = new System.Drawing.Point(300, 280);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(394, 41);
             this.txtMatKhau.TabIndex = 13;
@@ -100,7 +100,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(300, 199);
+            this.txtEmail.Location = new System.Drawing.Point(300, 223);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(394, 41);
             this.txtEmail.TabIndex = 12;
@@ -109,7 +109,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(87, 255);
+            this.label5.Location = new System.Drawing.Point(87, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 41);
             this.label5.TabIndex = 11;
@@ -119,7 +119,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(87, 199);
+            this.label4.Location = new System.Drawing.Point(87, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 41);
             this.label4.TabIndex = 10;
@@ -130,7 +130,7 @@
             this.btnDangNhap.AutoSize = true;
             this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(358, 342);
+            this.btnDangNhap.Location = new System.Drawing.Point(358, 366);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(95, 31);
             this.btnDangNhap.TabIndex = 15;
@@ -149,7 +149,7 @@
             this.btnDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangKy.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangKy.ForeColor = System.Drawing.Color.White;
-            this.btnDangKy.Location = new System.Drawing.Point(174, 327);
+            this.btnDangKy.Location = new System.Drawing.Point(174, 351);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(165, 55);
             this.btnDangKy.TabIndex = 14;

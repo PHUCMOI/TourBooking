@@ -385,6 +385,7 @@
             this.Controls.Add(this.pnlBill);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmPayment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmPayment";
             this.Load += new System.EventHandler(this.FmPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();

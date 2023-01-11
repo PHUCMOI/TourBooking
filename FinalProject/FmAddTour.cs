@@ -95,10 +95,10 @@ namespace FinalProject
         {
 
             AddItem(txtTitle.Text, txtTime.Text, txtStartPlace.Text, txtDestination.Text, txtPrice.Text, txtdateStart.Text, txtCount.Text, txtSchedule.Text, pic1, pic2, pic3, pic4);
-            FmHome fmHome = new FmHome();
+            FmHome fmHome = new FmHome(true);
             fmHome.Sender("1");
             fmHome.Show();
-            
+
             /*if (txtTitle.Text != "" || txtTime.Text != "" || txtStartPlace.Text != "" || txtDestination.Text != "" || txtPrice.Text != "" || txtCount.Text != "" || txtSchedule.Text != "" || pic1 != "" || pic2 != "" || pic3 != "" || pic4 != "")
             {
                 
@@ -108,7 +108,7 @@ namespace FinalProject
                 MessageBox.Show("Vui lòng điền đủ thông tin");
             }*/
             //ButtonFirstFormClicked?.Invoke(sender, e);
-          
+
         }
 
         public string ImageToBase64(string path)
@@ -184,6 +184,5 @@ namespace FinalProject
                 }
             }
         }
-
     }
 }

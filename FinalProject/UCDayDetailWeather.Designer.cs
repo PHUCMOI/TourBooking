@@ -42,7 +42,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(21, 261);
+            this.lblTime.Location = new System.Drawing.Point(244, 9);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(54, 28);
             this.lblTime.TabIndex = 15;
@@ -52,7 +52,7 @@
             // 
             this.lblWind.AutoSize = true;
             this.lblWind.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWind.Location = new System.Drawing.Point(21, 500);
+            this.lblWind.Location = new System.Drawing.Point(244, 249);
             this.lblWind.Name = "lblWind";
             this.lblWind.Size = new System.Drawing.Size(111, 28);
             this.lblWind.TabIndex = 14;
@@ -62,7 +62,7 @@
             // 
             this.lblHumidity.AutoSize = true;
             this.lblHumidity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHumidity.Location = new System.Drawing.Point(21, 450);
+            this.lblHumidity.Location = new System.Drawing.Point(31, 249);
             this.lblHumidity.Name = "lblHumidity";
             this.lblHumidity.Size = new System.Drawing.Size(90, 28);
             this.lblHumidity.TabIndex = 13;
@@ -72,7 +72,7 @@
             // 
             this.lblTemp.AutoSize = true;
             this.lblTemp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemp.Location = new System.Drawing.Point(21, 400);
+            this.lblTemp.Location = new System.Drawing.Point(244, 149);
             this.lblTemp.Name = "lblTemp";
             this.lblTemp.Size = new System.Drawing.Size(58, 28);
             this.lblTemp.TabIndex = 12;
@@ -82,7 +82,7 @@
             // 
             this.lblMain.AutoSize = true;
             this.lblMain.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMain.Location = new System.Drawing.Point(21, 350);
+            this.lblMain.Location = new System.Drawing.Point(244, 98);
             this.lblMain.Name = "lblMain";
             this.lblMain.Size = new System.Drawing.Size(56, 28);
             this.lblMain.TabIndex = 11;
@@ -92,7 +92,7 @@
             // 
             this.lblDay.AutoSize = true;
             this.lblDay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.Location = new System.Drawing.Point(21, 305);
+            this.lblDay.Location = new System.Drawing.Point(244, 53);
             this.lblDay.Name = "lblDay";
             this.lblDay.Size = new System.Drawing.Size(46, 28);
             this.lblDay.TabIndex = 10;
@@ -102,7 +102,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(26, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 244);
+            this.pictureBox1.Size = new System.Drawing.Size(212, 224);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.lblWind);
             this.Controls.Add(this.lblHumidity);
@@ -120,7 +120,7 @@
             this.Controls.Add(this.lblDay);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UCDayDetailWeather";
-            this.Size = new System.Drawing.Size(300, 556);
+            this.Size = new System.Drawing.Size(500, 296);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

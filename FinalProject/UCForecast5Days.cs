@@ -26,11 +26,16 @@ namespace FinalProject
         public string wind { get => lblWind.Text; set => lblWind.Text = value; }
         public string humidity { get => lblHumidity.Text; set => lblHumidity.Text = value; }
 
-        public string image { get => pictureBox1.ImageLocation; set =>pictureBox1.ImageLocation = value; }
+        public string image { get => pictureBox1.ImageLocation; set => pictureBox1.ImageLocation = value; }
 
         private void UCForecast5Days_Click(object sender, EventArgs e)
         {
             OnSelect?.Invoke(this, e);
+        }
+
+        private void UCForecast5Days_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -228,6 +228,19 @@ namespace FinalProject
             {
                 MessageBox.Show(ex.Message);
             }
+            if(FmSignUp.flag == false)
+            {
+                FmHome fmHome = new FmHome(false);
+                fmHome.Show();
+                this.Close();
+            }
+            else
+            {
+                FmHome fmHome = new FmHome(true);
+                fmHome.Show();
+                this.Close();
+            }
+            
         }
     }
 }

@@ -24,11 +24,11 @@ namespace FinalProject
             {
                 Time = time,
                 Day = day,
-                Main = main,
-                temp = temp,
-                wind = wind,
-                humidity = humidity,
-                image = image,
+                Main = "Bầu trời: " + main,
+                temp = "Nhiệt độ: " + temp,
+                wind = "Tốc độ gió: " + wind,
+                humidity = "Độ ẩm: " + humidity,
+                image = image
             };
             pnlControl.Controls.Add(m);
         }
@@ -43,7 +43,7 @@ namespace FinalProject
                         AddWeatherDetails(FmDetailsItem.weather5s[i].getset_weatherTime[j],
                             FmDetailsItem.weather5s[i].getset_Day,
                             FmDetailsItem.weather5s[i].getset_weatherMain[j],
-                            "Cao: " + FmDetailsItem.weather5s[i].getset_weatherTempMax[j].ToString() + "°C  Thấp" + FmDetailsItem.weather5s[i].getset_weatherTempMin[j].ToString() + "°C",
+                            "Cao: " + FmDetailsItem.weather5s[i].getset_weatherTempMax[j].ToString() + "°C \n    Thấp: " + FmDetailsItem.weather5s[i].getset_weatherTempMin[j].ToString() + "°C",
                             Math.Round(FmDetailsItem.weather5s[i].getset_weatherHumdity[j], 2).ToString() + "%",
                             Math.Round(FmDetailsItem.weather5s[i].getset_weatherWind[j], 2).ToString() + "m/s",
                             "https://openweathermap.org/img/w/" + FmDetailsItem.weather5s[i].getset_weatherIcon[j] + ".png");
@@ -54,8 +54,7 @@ namespace FinalProject
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            
-        
+            this.Close();        
         }
     }
 }

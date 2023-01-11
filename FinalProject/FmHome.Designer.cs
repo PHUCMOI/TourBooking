@@ -44,19 +44,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboDiemden = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateNgaydi = new System.Windows.Forms.DateTimePicker();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.pnlFilter = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnFilter = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMess)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGmail)).BeginInit();
@@ -68,11 +64,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFilter)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -220,7 +214,7 @@
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.cboDiemden);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(377, 3);
             this.panel3.Name = "panel3";
@@ -237,14 +231,14 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // comboBox1
+            // cboDiemden
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(85, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 39);
-            this.comboBox1.TabIndex = 1;
+            this.cboDiemden.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDiemden.FormattingEnabled = true;
+            this.cboDiemden.Location = new System.Drawing.Point(85, 52);
+            this.cboDiemden.Name = "cboDiemden";
+            this.cboDiemden.Size = new System.Drawing.Size(193, 39);
+            this.cboDiemden.TabIndex = 1;
             // 
             // label3
             // 
@@ -260,7 +254,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.dateTimePicker1);
+            this.panel4.Controls.Add(this.dateNgaydi);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(692, 3);
@@ -268,13 +262,13 @@
             this.panel4.Size = new System.Drawing.Size(309, 108);
             this.panel4.TabIndex = 10;
             // 
-            // dateTimePicker1
+            // dateNgaydi
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(85, 52);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 38);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dateNgaydi.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateNgaydi.Location = new System.Drawing.Point(85, 52);
+            this.dateNgaydi.Name = "dateNgaydi";
+            this.dateNgaydi.Size = new System.Drawing.Size(200, 38);
+            this.dateNgaydi.TabIndex = 3;
             // 
             // pictureBox3
             // 
@@ -296,57 +290,16 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Ngày đi";
             // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(1007, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(227, 108);
-            this.panel5.TabIndex = 11;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(85, 51);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(113, 39);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(13, 29);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(49, 51);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(80, 8);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 28);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Số ngày";
-            // 
             // pnlFilter
             // 
             this.pnlFilter.Controls.Add(this.panel2);
             this.pnlFilter.Controls.Add(this.pictureBox5);
             this.pnlFilter.Controls.Add(this.panel3);
             this.pnlFilter.Controls.Add(this.panel4);
-            this.pnlFilter.Controls.Add(this.panel5);
-            this.pnlFilter.Controls.Add(this.pictureBox6);
-            this.pnlFilter.Location = new System.Drawing.Point(89, 85);
+            this.pnlFilter.Controls.Add(this.btnFilter);
+            this.pnlFilter.Location = new System.Drawing.Point(118, 85);
             this.pnlFilter.Name = "pnlFilter";
-            this.pnlFilter.Size = new System.Drawing.Size(1357, 125);
+            this.pnlFilter.Size = new System.Drawing.Size(1127, 125);
             this.pnlFilter.TabIndex = 14;
             // 
             // pictureBox5
@@ -359,15 +312,17 @@
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
+            // btnFilter
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1240, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(106, 90);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
+            this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFilter.Image = ((System.Drawing.Image)(resources.GetObject("btnFilter.Image")));
+            this.btnFilter.Location = new System.Drawing.Point(1007, 3);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(106, 90);
+            this.btnFilter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnFilter.TabIndex = 13;
+            this.btnFilter.TabStop = false;
+            this.btnFilter.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // FmHome
             // 
@@ -399,12 +354,9 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlFilter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFilter)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,18 +374,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboDiemden;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateNgaydi;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox btnFilter;
         private System.Windows.Forms.FlowLayoutPanel pnlFilter;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.FlowLayoutPanel pnlControl;

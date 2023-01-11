@@ -14,6 +14,7 @@ namespace FinalProject
 {
     public partial class FmHome : Form
     {
+        bool flag;
         public delegate void SendMessage(string Message);
         public SendMessage Sender;
 
@@ -79,33 +80,37 @@ namespace FinalProject
                 set { TourDestination.Add(value.ToString()); }
             }
         }
-        public FmHome()
+        public FmHome(bool flag)
         {
             InitializeComponent();
             Sender = new SendMessage(GetMessage);
+            this.flag = flag;
         }
         private void GetMessage(string Message)
         {
-            if(Message == "1")
+            if (Message == "1")
             {
                 xmlDoc.Load("..//..//data.xml");
 
                 nodeList = xmlDoc.DocumentElement.SelectNodes("/tours/" + "/tour");
                 var m = new UCItem()
                 {
-                    Title = nodeList[nodeList.Count].SelectSingleNode("title").InnerText,
-                    Time = nodeList[nodeList.Count].SelectSingleNode("time").InnerText,
-                    Price = nodeList[nodeList.Count].SelectSingleNode("price").InnerText,
-                    ImageTour = Base64ToImage(nodeList[nodeList.Count].SelectSingleNode("pic1").InnerText)
+                    Title = nodeList[nodeList.Count - 1].SelectSingleNode("title").InnerText,
+                    Time = nodeList[nodeList.Count - 1].SelectSingleNode("time").InnerText,
+                    Price = nodeList[nodeList.Count - 1].SelectSingleNode("price").InnerText + "VNĐ",
+                    ImageTour = Base64ToImage(nodeList[nodeList.Count - 1].SelectSingleNode("pic1").InnerText)
                 };
                 pnlControl.Controls.Add(m);
-            }    
+            }
         }
 
         private void FmHome_Load(object sender, EventArgs e)
         {
+            if(flag == false)
+            {
+                button1.Visible = false;
+            }    
             xmlDoc.Load("..//..//data.xml");
-
             nodeList = xmlDoc.DocumentElement.SelectNodes("/tours/" + "/tour");
             for(int i = 0; i < nodeList.Count; i++)
             {
@@ -122,18 +127,58 @@ namespace FinalProject
                 AddTourItem(DataTour.GlobalTourTitle[i],
                     DataTour.GlobalTourTime[i],
                     DataTour.GlobalTourPrice[i],
-                    Base64ToImage(DataTour.GlobalTourImage[i]));
+                    Base64ToImage(DataTour.GlobalTourImage[i]),
+                    DataTour.GlobalTourStartPlace[i],
+                    DataTour.GlobalTourDestination[i]);
+
+                cboDiemDi.Items.Add(nodeList[i].SelectSingleNode("startPlace").InnerText);
+                cboDiemden.Items.Add(nodeList[i].SelectSingleNode("destination").InnerText);
+                //SoNgay.Items.Add(nodeList[i].SelectSingleNode("time").InnerText);
             }
+
+            CheckDuplicate();
         }
 
-    public void AddTourItem(string title, string time, string price, Image image)
+
+
+        public void CheckDuplicate()
+        {
+            for (int i = 0; i < cboDiemDi.Items.Count; i++)
+            {
+                for (int j = 1; j < cboDiemDi.Items.Count; j++)
+                {
+                    if (cboDiemDi.Items[j].ToString() == cboDiemDi.Items[i].ToString())
+                    {
+                        cboDiemDi.Items.RemoveAt(i);
+                    }
+                }
+            }
+
+            for (int i = 0; i < cboDiemden.Items.Count; i++)
+            {
+                for (int j = 1; j < cboDiemden.Items.Count; j++)
+                {
+                    if (cboDiemden.Items[j].ToString() == cboDiemden.Items[i].ToString())
+                    {
+                        cboDiemden.Items.RemoveAt(i);
+                    }
+                }
+            }
+
+            
+        }
+
+        public void AddTourItem(string title, string time, string price, Image image, string StartPlace, string Destination)
         {
             var m = new UCItem()
             {
                 Title = title,
                 Time = time,
-                Price = price,
-                ImageTour = image
+                Price = price + "VNĐ",
+                ImageTour = image,
+                StartPlace = StartPlace,
+                destination = Destination
+               
             };
 
             pnlControl.Controls.Add(m); 
@@ -171,6 +216,7 @@ namespace FinalProject
         private void button1_Click(object sender, EventArgs e)
         {
             FmAddTour fm = new FmAddTour();
+            this.Hide();
             fm.ShowDialog();
             this.Show();
         }
@@ -184,6 +230,22 @@ namespace FinalProject
         {
             FmSendGamilCus fmSendGamilCus = new FmSendGamilCus();
             fmSendGamilCus.ShowDialog();
+        }
+        int count = 0;
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            foreach (var item in pnlControl.Controls)
+            {
+                count++;
+                var touritem = (UCItem)item;
+                if (touritem.label1.Text == cboDiemDi.SelectedItem.ToString() && touritem.label2.Text == cboDiemden.SelectedItem.ToString())
+                {
+                    touritem.Visible = true;
+                }
+                else
+                    touritem.Visible = false;
+            }
+            label1.Text = count.ToString();
         }
 
         public Image Base64ToImage(string base64String)

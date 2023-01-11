@@ -19,6 +19,7 @@ namespace FinalProject
 {
     public partial class FmSignUp : Form
     {
+        public static bool flag = false;
         IFirebaseConfig config = new FirebaseConfig()
         {
             AuthSecret = "mpfM9JA9tibP1cbQc4JjRQmkH17ikeuwVNF0nkN4",
@@ -52,11 +53,7 @@ namespace FinalProject
         private void Form1_Load(object sender, EventArgs e)
         {
             label1.Text = "Tournament\n     Travel";
-            client = new FireSharp.FirebaseClient(config);
-            if (client != null)
-            {
-                label7.Text = "Connected";
-            }    
+              
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -64,78 +61,18 @@ namespace FinalProject
             Application.Exit();
         }
 
-        private async void btnDangKy_Click(object sender, EventArgs e)
+        private void rjButton1_Click(object sender, EventArgs e)
         {
-            //Lưu vào database
-            Data DataLayer = new Data()
-            {
-                HoTen = txtHoTen.Text,
-                SĐT = txtSoDienThoai.Text,
-                Email = txtEmail.Text,
-                Password = txtMatKhau.Text
-            };
-
-            SetResponse response = await client.SetTaskAsync("", DataLayer);
-            Data result = response.ResultAs<Data>();
-
-
-            /* FmSignIn f1 = new FmSignIn();
-             f1.ShowDialog();
-             this.Hide();*/
+            flag = true;
+            FmSignIn fmSignIn = new FmSignIn();
+            fmSignIn.ShowDialog();
+            this.Close();
         }
 
-        private void txtSoDienThoai_TextChanged(object sender, EventArgs e)
+        private void btnCustomer_Click(object sender, EventArgs e)
         {
-            if (IsPhoneNumber(txtSoDienThoai.Text) == true || txtSoDienThoai.Text == "")
-            {
-                pnlCheckSĐT.BackColor = Color.Lime;
-            }
-            else
-            {
-                pnlCheckSĐT.BackColor = Color.Red;
-            }
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-            if (IsEmail(txtEmail.Text) == true || txtEmail.Text == "")
-            {
-                pnlCheckEmail.BackColor = Color.Lime;
-            }
-            else
-            {
-                pnlCheckEmail.BackColor = Color.Red;
-            }
-        }
-
-        private void txtMatKhau_TextChanged(object sender, EventArgs e)
-        {
-            if(txtMatKhau.Text.Length < 8)
-            {
-                pnlCheckPass.BackColor = Color.Red;
-            }
-            else
-            {
-                pnlCheckPass.BackColor = Color.Lime;
-            }
-        }
-
-        private void txtNhapLaiMatKhau_TextChanged(object sender, EventArgs e)
-        {
-            if(String.Compare(txtMatKhau.Text, txtNhapLaiMatKhau.Text) != 0)
-            {
-                pnlCheckPass1.BackColor = Color.Red;
-            }    
-            else
-            {
-                pnlCheckPass1.BackColor = Color.Lime;
-            }    
-        }
-
-        private void btnDangNhap_Click(object sender, EventArgs e)
-        {
-            FmSignIn f1 = new FmSignIn();
-            f1.ShowDialog();
+            FmHome fmHome = new FmHome(flag);
+            fmHome.ShowDialog();
             this.Close();
         }
     }

@@ -28,21 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSendGamilCus));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtFrom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblLinkFiles = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
             this.txtBody = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -97,8 +94,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.lblLinkFiles);
-            this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.btnSend);
             this.panel2.Controls.Add(this.txtBody);
             this.panel2.Controls.Add(this.label4);
@@ -108,15 +103,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(618, 468);
             this.panel2.TabIndex = 1;
-            // 
-            // lblLinkFiles
-            // 
-            this.lblLinkFiles.AutoSize = true;
-            this.lblLinkFiles.Location = new System.Drawing.Point(292, 387);
-            this.lblLinkFiles.Name = "lblLinkFiles";
-            this.lblLinkFiles.Size = new System.Drawing.Size(44, 16);
-            this.lblLinkFiles.TabIndex = 11;
-            this.lblLinkFiles.Text = "label5";
             // 
             // btnSend
             // 
@@ -140,7 +126,7 @@
             this.txtBody.Multiline = true;
             this.txtBody.Name = "txtBody";
             this.txtBody.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBody.Size = new System.Drawing.Size(462, 312);
+            this.txtBody.Size = new System.Drawing.Size(462, 338);
             this.txtBody.TabIndex = 7;
             // 
             // label4
@@ -175,22 +161,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Image = ((System.Drawing.Image)(resources.GetObject("linkLabel1.Image")));
-            this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkLabel1.Location = new System.Drawing.Point(133, 377);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(137, 28);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "     Attach Files";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // FmSendGamilCus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -218,8 +188,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblLinkFiles;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.TextBox txtBody;
         private System.Windows.Forms.Label label4;

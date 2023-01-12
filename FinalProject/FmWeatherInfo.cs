@@ -46,7 +46,6 @@ namespace FinalProject
                         a++;
                     }
                 }
-                label1.Text = a.ToString();
                 for (int i = 0; i < 6; i++)
                 {
                     for (int j = 0; j < forecastInfo.list.Count; j++)
@@ -141,17 +140,9 @@ namespace FinalProject
                 
                 pnlControl.Visible = false;
                 FmDetailDayWeather frm3 = new FmDetailDayWeather(day);
-                frm3.TopLevel = false;
-                pnlControl.Hide();
-                if (pnlControl.Visible == false)
-                {
-                    pnlDetailDayWeather.Visible = true;
-                    pnlDetailDayWeather.Dock = DockStyle.Fill;
-                    pnlDetailDayWeather.Controls.Add(frm3);
-                    frm3.BringToFront();
-                    frm3.Dock = DockStyle.Fill;
-                    frm3.Show();
-                }
+                this.Hide();
+                frm3.ShowDialog();
+                this.Close();
             };
         }
 

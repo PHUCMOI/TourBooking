@@ -94,6 +94,7 @@
             this.btnMess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMess.TabIndex = 5;
             this.btnMess.TabStop = false;
+            this.btnMess.Click += new System.EventHandler(this.btnMess_Click);
             // 
             // btnGmail
             // 
@@ -165,9 +166,10 @@
             // 
             // pnlOpenChildForm
             // 
-            this.pnlOpenChildForm.Location = new System.Drawing.Point(1375, 82);
+            this.pnlOpenChildForm.BackColor = System.Drawing.Color.Transparent;
+            this.pnlOpenChildForm.Location = new System.Drawing.Point(1396, 82);
             this.pnlOpenChildForm.Name = "pnlOpenChildForm";
-            this.pnlOpenChildForm.Size = new System.Drawing.Size(147, 33);
+            this.pnlOpenChildForm.Size = new System.Drawing.Size(126, 43);
             this.pnlOpenChildForm.TabIndex = 7;
             // 
             // panel2

@@ -58,8 +58,9 @@ namespace FinalProject
             if (txtEmail.Text == "admin" && txtMatKhau.Text == "admin")
             {
                 FmHome f1 = new FmHome(true);
+                this.Hide();
                 f1.ShowDialog();
-                this.Close();
+                this.Show();
             }
         }
 

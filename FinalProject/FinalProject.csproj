@@ -96,6 +96,12 @@
     <Compile Include="FmInformationCustomer.Designer.cs">
       <DependentUpon>FmInformationCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmMessageAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmMessageAdmin.Designer.cs">
+      <DependentUpon>FmMessageAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmPayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmInformationCustomer.resx">
       <DependentUpon>FmInformationCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmMessageAdmin.resx">
+      <DependentUpon>FmMessageAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmPayment.resx">
       <DependentUpon>FmPayment.cs</DependentUpon>

@@ -31,7 +31,7 @@ namespace FinalProject
             picTour.Image = picTour_;
             lblTour.Text = TourName;
             lblStartDay.Text = KhoiHanh;
-            lblPrice.Text = price_;
+            lblPrice.Text = price_ + "VNĐ";
             for (int i = 0; i < FmInformationCustomer.bookeds.Count; i++)
             {
                 for(int j = 0; j < FmInformationCustomer.bookeds[i].getset_NameCus.Count; j++)
@@ -79,17 +79,9 @@ namespace FinalProject
                         FmInformationCustomer.bookeds[i].getset_DayOfBirthCus[j]);
                 }    
             }    
-            /*friend.Rows.Add("1", "Smith", "United State", "California");
-            friend.Rows.Add("2", "Jack", "United Kingdom", "London");
-            friend.Rows.Add("3", "Kajal Singh", "India", "Delhi");
-            friend.Rows.Add("4", "Emmanuel", "South Africa", "Pretoria");
-            friend.Rows.Add("5", "Lucas", "Germany", "Berlin");
-            friend.Rows.Add("6", "Khalid", "UAE", "Dubai");
-            friend.Rows.Add("7", "William", "Australia", "Canberra");*/
 
             return Customers;
         }
-
         void ExportDataTableToPdf(DataTable dtblTable, String strPdfPath, string strHeader)
         {
             System.IO.FileStream fs = new FileStream(strPdfPath, FileMode.Create, FileAccess.Write, FileShare.None);
@@ -150,14 +142,15 @@ namespace FinalProject
                 + " we send you trip information.\n", fntInfo));
             document.Add(new Chunk("\nFor more information, please contact us via fanpage, gmail and phone number.\n", fntInfo));
 
-            document.Add(new Chunk("Customer contact information:" + FmInformationCustomer.bookeds[0].getset_NameBookedCus[0] + "\n" , fntInfo));
-            document.Add(new Chunk("                                       " + FmInformationCustomer.bookeds[0].getset_PhoneBookedCus[0] + "\n" , fntInfo));
-            document.Add(new Chunk("                                       " + FmInformationCustomer.bookeds[0].getset_EmailBookedCus[0] + "\n", fntInfo));
+            document.Add(new Chunk("Customer contact information" + "\n" , fntInfo));
+            document.Add(new Chunk("Name:" + FmInformationCustomer.bookeds[0].getset_NameBookedCus[0] + "\n", fntInfo));
+            document.Add(new Chunk("Phone Number" + FmInformationCustomer.bookeds[0].getset_PhoneBookedCus[0] + "\n" , fntInfo));
+            document.Add(new Chunk("Email" + FmInformationCustomer.bookeds[0].getset_EmailBookedCus[0] + "\n", fntInfo));
 
 
             document.Add(table);
 
-            document.Add(new Chunk("Total " + price_ + "VND\n", fntInfo));
+            document.Add(new Chunk("                                                                                    Total " + price_ + "\n", fntInfo));
 
             if (rdoATM.Checked)
             {
@@ -172,18 +165,13 @@ namespace FinalProject
                 document.Add(new Chunk("TOURNAMENT TRAVEL.\n", fntInfo));
             }
 
-            document.Add(new Chunk("Address: Trường Đại học Công Nghệ Thông tin\n", fntInfo));
+            document.Add(new Chunk("Address: University of Information Technology\n", fntInfo));
             document.Add(new Chunk("Phone Number: 0835413038\n", fntInfo));
             document.Add(new Chunk("Email: 20521782@gm.uit.edu.vn\n", fntInfo));
 
             document.Close();
             writer.Close();
             fs.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnDatTour_Click(object sender, EventArgs e)
@@ -215,7 +203,7 @@ namespace FinalProject
                 mailMessage.To.Add(FmInformationCustomer.bookeds[0].getset_EmailBookedCus[0]);
 
                 System.Net.Mail.Attachment attachment;
-                attachment = new Attachment(@"test.pdf");
+                attachment = new Attachment(@"Travel.pdf");
                 mailMessage.Attachments.Add(attachment);
 
                 smtpClient.Port = 587;
@@ -228,17 +216,19 @@ namespace FinalProject
             {
                 MessageBox.Show(ex.Message);
             }
-            if(FmSignUp.flag == false)
+
+            if (FmSignUp.flag == false)
             {
                 FmHome fmHome = new FmHome(false);
-                fmHome.Show();
                 this.Close();
+                fmHome.ShowDialog();
+                
             }
             else
             {
                 FmHome fmHome = new FmHome(true);
-                fmHome.Show();
                 this.Close();
+                fmHome.ShowDialog();
             }
             
         }

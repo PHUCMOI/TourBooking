@@ -65,6 +65,7 @@ namespace FinalProject
         {
             flag = true;
             FmSignIn fmSignIn = new FmSignIn();
+            this.Hide();
             fmSignIn.ShowDialog();
             this.Close();
         }
@@ -72,6 +73,7 @@ namespace FinalProject
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             FmHome fmHome = new FmHome(flag);
+            this.Hide();
             fmHome.ShowDialog();
             this.Close();
         }

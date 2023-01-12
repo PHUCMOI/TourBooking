@@ -39,7 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnDangNhap = new System.Windows.Forms.Label();
             this.btnDangKy = new _20521782_TranMinhPhuc_BTTH2.RJButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -158,15 +157,6 @@
             this.btnDangKy.UseVisualStyleBackColor = false;
             this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(328, 151);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 16);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "admin123@gmail.com";
-            // 
             // FmSignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,7 +165,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1522, 810);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.txtMatKhau);
@@ -210,6 +199,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label btnDangNhap;
         private _20521782_TranMinhPhuc_BTTH2.RJButton btnDangKy;
-        private System.Windows.Forms.Label label2;
     }
 }

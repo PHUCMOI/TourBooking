@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject", "FinalProject\FinalProject.csproj", "{8F869F2B-0DB8-45A2-AFF0-BED1E333E61F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FmMessageCLient", "FmMessageCLient\FmMessageCLient.csproj", "{2DAA38DE-58B7-4858-846D-3DECE3B05E6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8F869F2B-0DB8-45A2-AFF0-BED1E333E61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F869F2B-0DB8-45A2-AFF0-BED1E333E61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F869F2B-0DB8-45A2-AFF0-BED1E333E61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DAA38DE-58B7-4858-846D-3DECE3B05E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAA38DE-58B7-4858-846D-3DECE3B05E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAA38DE-58B7-4858-846D-3DECE3B05E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAA38DE-58B7-4858-846D-3DECE3B05E6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

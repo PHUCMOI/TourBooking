@@ -19,6 +19,7 @@ namespace FinalProject
         public static List<Weather5Days> weather5s = new List<Weather5Days>();
         private string title;
         private string city;
+        
         public FmDetailsItem(string title_)
         {
             title = title_;
@@ -99,6 +100,28 @@ namespace FinalProject
         {
             FmInformationCustomer fmInformationCustomer = new FmInformationCustomer(lblTitle.Text, lblKhoihanh.Text, picDetails1.Image, lblPrice.Text);
             fmInformationCustomer.ShowDialog(); 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMess_Click(object sender, EventArgs e)
+        {
+            FmMessageAdmin fmMessage = new FmMessageAdmin();
+            fmMessage.ShowDialog();
+        }
+
+        private void btnGmail_Click(object sender, EventArgs e)
+        {
+            FmSendGamilCus fmSendGamilCus = new FmSendGamilCus();
+            fmSendGamilCus.ShowDialog();
         }
     }
 }

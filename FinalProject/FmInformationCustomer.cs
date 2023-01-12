@@ -42,7 +42,7 @@ namespace FinalProject
             picTour.Image = picTour_;
             lblTour.Text = TourName;
             lblStartDay.Text = KhoiHanh;
-            lblPrice.Text = price_;
+            lblPrice.Text = price_ + "VNĐ";
             OriPrice = Convert.ToDouble(price_.Replace(",", "").Replace(" đ", ""));
         }
 

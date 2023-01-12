@@ -93,9 +93,9 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             AddItem(txtTitle.Text, txtTime.Text, txtStartPlace.Text, txtDestination.Text, txtPrice.Text, txtdateStart.Text, txtCount.Text, txtSchedule.Text, pic1, pic2, pic3, pic4);
             FmHome fmHome = new FmHome(true);
+            this.Close();
             fmHome.Sender("1");
             fmHome.Show();
 

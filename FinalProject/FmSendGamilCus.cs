@@ -22,7 +22,7 @@ namespace FinalProject
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             openFileDialog1.ShowDialog();
-            lblLinkFiles.Text = openFileDialog1.FileName;
+            //lblLinkFiles.Text = openFileDialog1.FileName;
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -34,12 +34,12 @@ namespace FinalProject
                 mailMessage.From = new MailAddress(txtFrom.Text);
                 mailMessage.Subject = txtTitle.Text;
                 mailMessage.Body = txtBody.Text;
-                //mailMessage.To.Add("tmp8122017@gmail.com"); 
-                mailMessage.To.Add("20521769@gm.uit.edu.vn");
+                mailMessage.To.Add("tmp8122017@gmail.com"); 
+                //mailMessage.To.Add("20521769@gm.uit.edu.vn");
 
-                System.Net.Mail.Attachment attachment;
+                /*System.Net.Mail.Attachment attachment;
                 attachment = new Attachment(lblLinkFiles.Text);
-                mailMessage.Attachments.Add(attachment);
+                mailMessage.Attachments.Add(attachment);*/
 
                 smtpClient.Port = 587;
                 smtpClient.Credentials = new System.Net.NetworkCredential(txtFrom.Text, txtPassword.Text);

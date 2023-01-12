@@ -87,3 +87,4 @@ C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.UCDeatilCustomer.resources
 C:\C#\TourBooking\FinalProject\bin\Debug\BouncyCastle.Crypto.dll
 C:\C#\TourBooking\FinalProject\bin\Debug\itextsharp.dll
 C:\C#\TourBooking\FinalProject\bin\Debug\itextsharp.xml
+C:\C#\TourBooking\FinalProject\obj\Debug\FinalProject.FmMessageAdmin.resources

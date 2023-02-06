@@ -85,8 +85,6 @@ namespace FinalProject
             pic4_.InnerText = pic4;
             item.AppendChild(pic4_);
 
-            MessageBox.Show("123");
-
             root.AppendChild(item);
             doc.Save(fileName);
         }

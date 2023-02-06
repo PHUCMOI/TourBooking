@@ -93,6 +93,7 @@
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(300, 280);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '•';
             this.txtMatKhau.Size = new System.Drawing.Size(394, 41);
             this.txtMatKhau.TabIndex = 13;
             // 

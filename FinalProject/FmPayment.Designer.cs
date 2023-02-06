@@ -32,11 +32,7 @@
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnDatTour = new _20521782_TranMinhPhuc_BTTH2.RJButton();
             this.pnlBill = new System.Windows.Forms.Panel();
-            this.lblSoLuong = new System.Windows.Forms.Label();
-            this.btnPlus = new System.Windows.Forms.PictureBox();
-            this.btnMinus = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.picTour = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -44,29 +40,27 @@
             this.lblStartDay = new System.Windows.Forms.Label();
             this.pnlControl = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlPayment = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.rdoATM = new System.Windows.Forms.RadioButton();
             this.rdoCash = new System.Windows.Forms.RadioButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.pnlBill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPlus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTour)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.pnlPayment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -103,11 +97,7 @@
             // 
             // pnlBill
             // 
-            this.pnlBill.Controls.Add(this.lblSoLuong);
-            this.pnlBill.Controls.Add(this.btnPlus);
-            this.pnlBill.Controls.Add(this.btnMinus);
             this.pnlBill.Controls.Add(this.label2);
-            this.pnlBill.Controls.Add(this.lbl);
             this.pnlBill.Controls.Add(this.lblPrice);
             this.pnlBill.Controls.Add(this.picTour);
             this.pnlBill.Controls.Add(this.flowLayoutPanel1);
@@ -115,38 +105,6 @@
             this.pnlBill.Name = "pnlBill";
             this.pnlBill.Size = new System.Drawing.Size(358, 492);
             this.pnlBill.TabIndex = 7;
-            // 
-            // lblSoLuong
-            // 
-            this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuong.Location = new System.Drawing.Point(250, 373);
-            this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(23, 28);
-            this.lblSoLuong.TabIndex = 9;
-            this.lblSoLuong.Text = "1";
-            // 
-            // btnPlus
-            // 
-            this.btnPlus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPlus.Image = ((System.Drawing.Image)(resources.GetObject("btnPlus.Image")));
-            this.btnPlus.Location = new System.Drawing.Point(301, 377);
-            this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(25, 21);
-            this.btnPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnPlus.TabIndex = 8;
-            this.btnPlus.TabStop = false;
-            // 
-            // btnMinus
-            // 
-            this.btnMinus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinus.Image = ((System.Drawing.Image)(resources.GetObject("btnMinus.Image")));
-            this.btnMinus.Location = new System.Drawing.Point(200, 377);
-            this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(25, 21);
-            this.btnMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinus.TabIndex = 7;
-            this.btnMinus.TabStop = false;
             // 
             // label2
             // 
@@ -159,23 +117,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Tổng cộng";
             // 
-            // lbl
-            // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(17, 371);
-            this.lbl.MaximumSize = new System.Drawing.Size(340, 0);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(110, 32);
-            this.lbl.TabIndex = 3;
-            this.lbl.Text = "So luong";
-            // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblPrice.Location = new System.Drawing.Point(186, 421);
+            this.lblPrice.Location = new System.Drawing.Point(170, 421);
             this.lblPrice.MaximumSize = new System.Drawing.Size(340, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(149, 32);
@@ -196,7 +143,7 @@
             this.flowLayoutPanel1.Controls.Add(this.lblStartDay);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 240);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(351, 128);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(351, 169);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
             // lblTour
@@ -243,52 +190,6 @@
             this.pnlPayment.Size = new System.Drawing.Size(1115, 189);
             this.pnlPayment.TabIndex = 11;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(29, 13);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(356, 41);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Thanh toán bằng tiền mặt";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(28, 69);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(357, 41);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Thanh toán bằng thẻ ATM";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 113);
-            this.label1.MaximumSize = new System.Drawing.Size(1000, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "(VNPay, Momo, ZaloPay, ShoppePay, ... )";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(406, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -302,6 +203,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1115, 189);
             this.panel1.TabIndex = 13;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(521, 70);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(462, 70);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -349,28 +273,51 @@
             this.rdoCash.Text = "Thanh toán bằng tiền mặt";
             this.rdoCash.UseVisualStyleBackColor = true;
             // 
-            // pictureBox3
+            // pictureBox1
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(462, 70);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(406, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
-            // pictureBox4
+            // label1
             // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(521, 70);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(52, 113);
+            this.label1.MaximumSize = new System.Drawing.Size(1000, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(418, 31);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "(VNPay, Momo, ZaloPay, ShoppePay, ... )";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(28, 69);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(357, 41);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Thanh toán bằng thẻ ATM";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(29, 13);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(356, 41);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Thanh toán bằng tiền mặt";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // FmPayment
             // 
@@ -391,19 +338,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.pnlBill.ResumeLayout(false);
             this.pnlBill.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPlus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTour)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.pnlPayment.ResumeLayout(false);
             this.pnlPayment.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -413,11 +358,7 @@
         private System.Windows.Forms.PictureBox btnExit;
         private _20521782_TranMinhPhuc_BTTH2.RJButton btnDatTour;
         private System.Windows.Forms.Panel pnlBill;
-        private System.Windows.Forms.Label lblSoLuong;
-        private System.Windows.Forms.PictureBox btnPlus;
-        private System.Windows.Forms.PictureBox btnMinus;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.PictureBox picTour;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;

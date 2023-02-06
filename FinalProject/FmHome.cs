@@ -266,7 +266,6 @@ namespace FinalProject
             FmSendGamilCus fmSendGamilCus = new FmSendGamilCus();
             fmSendGamilCus.ShowDialog();
         }
-        int count = 0;
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             foreach (var item in pnlControl.Controls)
